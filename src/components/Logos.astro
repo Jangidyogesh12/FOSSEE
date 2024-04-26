@@ -1,0 +1,42 @@
+---
+import IIT_Bombay from "./src/assets/IITBombay-logo.jpg"
+import FOSSEE from "./src/assets/FOSSEE_logo.png"
+import RuDRA from "./src/assets/RuDRA.jpeg"
+import Tirupati from "./src/assets/iit-tirupati.png"
+import navavishkar from "./src/assets/navavishkaar.png"
+import npimc from "./src/assets/NMICPS-Final-01.webp"
+import ICFOSS from "./src/assets/ICFOSS.png"
+
+const {height}= Astro.props;
+---
+<div class="Logo_box">
+    <ul>
+        <li id="img1"><img src={IIT_Bombay.src} style={{ height: `${height}px` }}></li>
+        <li id="img2"><img src={FOSSEE.src} style={{ height: `${height}px` }}></li>
+        <li id="img3"><img src={RuDRA.src} style={{ height: `${height}px` }}></li>
+        <li id="img4"><img src={Tirupati.src} style={{ height: `${height}px` }}></li>
+        <li id="img5"><img src={navavishkar.src} style={{ height: `${height}px` }}></li>
+        <li id="img6"><img src={npimc.src} style={{ height: `${height}px` }}></li>
+        <li id="img7"><img src={ICFOSS.src} style={{ height: `${height}px` }}></li>
+    </ul>
+</div>
+
+
+<style>
+    .Logo_box{
+        width: 100%;
+        background-color: white;
+    }
+    ul{
+        /* background-color: white; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        
+    }
+    li{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+</style>

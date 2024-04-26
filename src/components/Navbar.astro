@@ -1,0 +1,54 @@
+---
+
+---
+
+<div class="Navbar">
+    <ul class="Navlist">
+        <li class="Nav_element"><a href="/">Home</a></li>
+        <li class="Nav_element"><a href="/">About</a></li>
+        <li class="Nav_element"><a href="/">Resources</a></li>
+        <li class="Nav_element"><a href="/">Schedule</a></li>
+        <li class="Nav_element"><a href="/">Register</a></li>
+        <li class="Nav_element"><a href="/">Partners</a></li>
+        <li class="Nav_element"><a href="/">Contact Us</a></li>
+    </ul>
+</div>
+
+<style>
+    ul{
+        list-style-type: none;
+    }
+    .Navlist{
+        display: flex;
+        justify-content: center ;
+        align-items: center
+    }
+    .Navbar{
+        position: sticky;
+        top: 0;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        background-color: #f2f6e7;
+        height: 50px;
+        z-index: 30;
+    }
+    a{
+        font-size: 13pt;
+        padding: 20px;
+        text-decoration: none;
+        color: blue;
+    }
+    .Nav_element{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+    }
+    .Nav_element:hover{
+        background-color: darkblue;
+    }
+    a:hover{
+        color: white;
+    }
+</style>

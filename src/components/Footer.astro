@@ -1,0 +1,89 @@
+---
+import img  from "./src/assets/88x31.png"
+---
+
+<div class="footer_class">
+	<div class="footer_about">
+		<h2>About</h2>
+		<a href="https://www.iitb.ac.in/">IIT Bombay</a>
+		<a href="https://fossee.in/">FOSSEE</a>
+		<a href="https://nmeict.ac.in/">NMEICT</a>
+		<a href="https://www.rudra.iitb.ac.in/">The RuDRA Lab</a>
+		<a href="https://www.iittnif.org/">IITTNiF</a>
+		<a href="https://icfoss.in/">ICFOSS</a>
+		<a href="https://spoken-tutorial.org/">Spoken Tutorial</a>
+	</div>
+	<div class="footer_resources">
+		<h2>Resources</h2>
+		<a href="https://qgis.org/en/site/forusers/download.html">QGIS</a>
+		<a href="https://spoken-tutorial.org/tutorial-search/?search_foss=QGIS&search_language=English">Spoken Tutorials - FOSSEE - GIS</a>
+	</div>
+    <div class="footer_img"><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src={img.src}> </a><p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a></p></div>
+</div>
+
+<style>
+    .footer_class{
+		display: flex;
+		z-index: 0;
+		position: static;
+		margin-top: -80px;
+		width: 100%;
+		height: 50vh;
+		background-color: #3374ff;
+	}
+	.footer_class h2{
+		margin-bottom: 8px;
+	}
+
+	.footer_about{
+		display: flex;
+		flex-direction: column;
+		padding-left: 50px;
+		padding-top: 20px;
+		color: white;
+	}
+	.footer_about a{
+		color: white;
+		padding-bottom: 5px;
+		text-decoration: none;
+	}
+	.footer_about a:hover{
+		text-decoration: underline grey;
+	}
+
+	.footer_resources{
+		display: flex;
+		flex-direction: column;
+		padding-left: 160px;
+		padding-top: 20px;
+		color: white;
+	}
+	.footer_resources a{
+		color: white;
+		padding-bottom: 5px;
+		text-decoration: none;
+	}
+	.footer_resources a:hover{
+		text-decoration: underline grey;
+	}
+
+    .footer_img{
+        position: relative;
+        top:40px;
+        left: 40px;
+        padding-bottom: 0;
+    }
+    .footer_img p{
+        padding-top: 0;
+        font-size: 13px;
+    }
+    .footer_img a{
+        color: white;
+        text-decoration: none;
+    }
+    .footer_img a:hover{
+        color: white;
+        text-decoration: underline;
+    }
+    
+</style>

@@ -1,0 +1,23 @@
+---
+const {name, position, secondary_info, institute} =Astro.props;
+---
+
+<div class="Cards">
+    <p class="Name">{name}</p>
+    <p class="Position">{position}</p>
+    <p class="Secondary_info">{secondary_info}</p>
+    <p class="Insititute">{institute}</p>
+</div>
+
+<style>
+    .Cards{
+        text-align: center;
+        border: solid 0.5px rgba(128, 128, 128, 0.329);
+        border-radius: 10px;
+        width: 30vw;
+    }
+    .Name{
+        font-weight: bold
+    }
+
+</style>

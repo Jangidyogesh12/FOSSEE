@@ -1,0 +1,382 @@
+---
+// Importing Compopnents
+import Logos from '../components/Logos.astro';
+import Navbar from '../components/Navbar.astro';
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Footer from '../components/Footer.astro';
+
+// importing Assets
+import India_map from './src/assets/indiamap.png'
+import Hack from './src/assets/right-img.png'
+import IIT_Bombay from "./src/assets/IITBombay-logo.jpg"
+import FOSSEE from "./src/assets/FOSSEE_logo.png"
+import RuDRA from "./src/assets/RuDRA.jpeg"
+import Tirupati from "./src/assets/iit-tirupati.png"
+import navavishkar from "./src/assets/navavishkaar.png"
+import npimc from "./src/assets/NMICPS-Final-01.webp"
+import ICFOSS from "./src/assets/ICFOSS.png"
+import spoken from "./src/assets/Spoken_tutotrial.jpeg"
+import Social from '../components/Social.astro';
+import '@fortawesome/fontawesome-free/css/all.css'
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<Logos height = {50}/>
+		<Navbar/>
+		<Social/>
+		<div class="introduction">
+			<div class="Image">
+				<img src={India_map.src} alt="">
+			</div>
+			<div class="second">
+				<div class="Intro_text">IIT Bombay-FOSSEE-GIS/OSHW, IITTNiF & ICFOSS presents</div>
+				<div class="Hackathone">
+					<img src={Hack.src} alt="">
+				</div>
+				<div class="registeration-1"> 
+					<button><div class="text">Register</div> <div class="palette"></div></button>
+				</div>
+				
+			</div>
+		</div>
+		<div class="Main_Bord">
+			<h1>Introducing the Hackathon: Unlocking Innovation for a Better World</h1>
+
+			<p id="para1">Welcome to the Open Source Hardware IoT GIS Hackathon!</p>
+
+			<p id="para2">Welcome to the National Level Open Hardware-IoT Geospatial Hackathon, a stage where innovation knows no boundaries. This premier event brings together visionaries, tech enthusiasts, and problem solvers from across the nation to harness the power of open hardware, the Internet of Things (IoT), and geospatial technology. Get ready to explore uncharted possibilities, collaborate on real-world challenges, and make a significant impact on our world.
+			</p>
+
+			<h3> Significance:</h3>
+
+			<p id="para3">In a world where technology shapes our daily lives, the significance of this hackathon cannot be overstated. Here, participants have the opportunity to redefine the boundaries of what's possible. By merging open source principles with cutting-edge technologies, we aim to</p>
+
+			<ul>
+				<li>Solve Real-World Problems: Tackle critical issues such as environmental sustainability, disaster management, precision agriculture, and more. Your solutions can change lives and protect our planet.</li>
+
+				<li>Foster Innovation: Innovation thrives when knowledge is shared openly. By promoting open source hardware and IoT, we empower you to push the boundaries of creativity and discovery.</li>
+
+				<li>Create Collaborative Communities: Through this hackathon, we build communities of like-minded individuals passionate about making a difference. Together, we can achieve more than any one of us can alone</li>
+
+				<li>Empower Future Leaders: Whether you're a student, a professional, or an enthusiast, this hackathon is a launchpad for your ideas. It's a chance to develop your skills, showcase your talents, and make your mark on the world.</li>
+			</ul>
+
+			<p id="para4">Join us on this extraordinary journey, where innovation knows no bounds. Together, let's turn ideas into actions and make a lasting impact on society and the environment. The Open Source Hardware IoT GIS Hackathon is your stage to shine, and the world is waiting to witness your brilliance.</p>
+
+			<h1>Purpose</h1>
+
+			<p>This hackathon is more than just a competition; it's a platform for innovators, creators, and visionaries to come together and pioneer solutions for a brighter future. Our purpose is to harness the power of open source hardware, the Internet of Things (IoT), and Geographic Information Systems (GIS) to address some of the world's most pressing challenges. 
+			<br> <br>
+			The FOSSEE project, IIT Bombay promotes the use of Free/ Libre Open Source Software in academia and Industry. The FOSSEE project  is funded through the National Mission on Education through ICT (NMEICT), Ministry of Education, Government of India. The FOSSEE-GIS team manages the overall coordination of the "IIT Bombay FOSSEE GIS Internship in Geospatial Dashboard Design and Implementation". 
+			</p>
+
+			<h1>Registration</h1>
+			<div id="para5">
+				<p>Please click on the following button to register yourself for the Hackathon</p>
+				<div class="registeration-2"> 
+					<button><div class="text">Register</div> <div class="palette"></div></button>
+				</div>
+			</div>
+
+			<h1>Partners and Organisers</h1>
+			<div class="scroll_container_outer">
+				<div class="scroll_container">
+					<img src={IIT_Bombay.src} alt="">
+					<img src={FOSSEE.src} alt="">
+					<img src={spoken.src} alt="">
+					<img src={ICFOSS.src} alt="">
+					<img src={RuDRA.src} alt="">
+					<img src={Tirupati.src} alt="">
+					<img src={navavishkar.src} alt="">
+					<img src={npimc.src} alt="">
+			    </div>
+			</div>
+
+			<p id="para6"><strong>Main Organizer: IIT Bombay FOSSEE GIS & OSHW project (NMEICT, Ministry of Education, Government of India) </strong>  The IIT Bombay FOSSEE GIS & OSHW project teams are the main organizers of this National Level Geospatial IoT Hackathon 2024 (Edition 01). FOSSEE promotes the usage of Free/Libre Open Source Software in academia and industry and is funded through the National Mission on Education through ICT, Ministry of Education, Government of India. 
+			<br><br> 
+			<strong>Technical Partner:</strong>  The Rural Data Research and Analysis (RuDRA) Lab, IIT Bombay is India's first HPC-powered data center dedicated to Rural Development.
+			<br><br>
+			<strong>Organizing Partners: IITTNiF (NM-ICPS, DST, Government of India) & ICFOSS (Government of Kerala):</strong>   <strong>The IIT Tirupati Navavishkar I-Hub Foundation</strong> is the Technology Innovation Hub of IIT Tirupati specializing in Positioning and Precision Technologies, funded through the National Mission on Interdisciplinary Cyber-Physical System (NM-ICPS), Department of Science and Technology, Government of India.
+			<br><br>
+			<strong>ICFOSS: The International Centre for Free and Open Source Software (ICFOSS) is an autonomous organization set up by the Government of Kerala, India,</strong> and has the combined mandate of popularizing Free and Open Source Software for universal use; consolidating the early FOSS work done in Kerala; and networking with different nations, communities, and governments to collaboratively promote FOSS
+		    </p>
+
+			<div class="contact_us">
+
+				<h1 style="text-align: center;">Core Team & Contact Us <i class="fa-solid fa-phone" style="transform: rotateY(180deg);"></i></h1>
+
+				<div class="card_alignment">
+					<div class="card_assembly">
+					    <!-- 1st Card -->
+					    <Card  name="Prof. Kannan Moudgalya" position="Principal Investigator, FOSSEE, Spoken Tutorial, NVLI"      institute="Indian Institute of Technology Bombay"/>
+				        <!-- 2nd Card -->
+				        <Card name="Prof. Pennan Chinnasamy" position="Co.P.I., FOSSEE & PiC, The Rural Data Research & Analysis (RuDRA) Lab, IIT Bombay" institute="Indian Institute of Technology Bombay"/>
+				        <!-- 3rd Card -->
+				        <Card name="Prof. Roshan Srivastav" position="Project Director, IIT Tirupati Navavishkar I-Hub Foundation (NM-ICPS,DST)" institute="Indian Institute of Technology  Tirupati"/>
+				        <!-- 4rh Card -->
+				        <Card name="Mr. Rajesh Kushalkar" position="Senior Manager, FOSSEE-Open Source Hardware (OSHW)" institute="Indian     Institute of Technology Bombay"/>
+				        <!-- 5th Card -->
+				        <Card name="Dr. Sunil T T" position="Director" institute="ICFOSS"/>
+				        <!-- 6th Card -->
+				        <Card name="Dr. Srinivasan Ravindran" position="Program Head, FOSS Business Solutions" institute="ICFOSS"/>
+				        <!-- 7th Card -->
+				        <Card name="Mr. Shafeek P M" position="Technical Coordinator - IoT" institute="ICFOSS"/>
+				        <!-- 8th Card -->
+				        <Card name="Mr. Jayakumar K S" position="Manager, Incubation & FOSS Business Solutions" institute="ICFOSS"/>
+
+						<div class="secondary_card">
+						    <!-- 9th Card -->
+				            <Card name="Mr. Mohamed Kasim Khan" position="National Coordinator, FOSSEE-GIS & GIS-IoT Hackathon"     secondary_info="National Mission on Education through ICT, Ministry of Education, Government of India"     institute="Indian Institute of Technology Bombay"/>
+						</div>
+				    </div>
+					
+				</div>
+				<p class="endpara">Please write to us in case of any queries regarding the Hackathon at:</p>
+				<p class="email"><i class="fa-regular fa-envelope"></i> Email :<a class="email_address">rajesh[at]cse[dot]iitb[dot]ac[dot]in</a>; <a class="email_address">mohamedkasim[at]iitb[dot]ac[dot]in</a></p>
+		    </div>
+		</div>
+		<Footer/>
+	</main>
+</Layout>
+
+<style>
+	main{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: grey;
+	}
+	.introduction{
+		background-color: #f2f6e7;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 70px;
+		position: relative;
+		z-index: 2;
+
+	}
+	.Image{
+		display: flex;
+		justify-content: center;
+	}
+	.Image img{
+		width:70%;
+		margin-top: 80px;
+		margin-left: 50px;
+	}
+	.Intro_text{
+		font-family: 'Roboto Slab', serif;
+		color: darkblue;
+		text-align: center;
+		font-size: 1.8rem;
+		width: 74%;
+		margin-top: 30px;
+	}
+
+	.Hackathone{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.Hackathone img{
+		width: 70%;
+	}
+	.second{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.registeration-1{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 74%;
+		height: 45px;
+		padding: 10px;
+		margin-top: 10px;
+		border-radius: 22px;
+		background-color: #915e26;
+	}
+	.registeration-1 button{
+		position: relative;
+		width: 50%;
+		height: 80%;
+		border:solid 1px rgb(73, 5, 231);
+		color: darkblue;
+		box-shadow: 0 0 8px 4px rgba(0, 0, 139, 0.5), /* outer shadow */
+            inset 0 0 3px 1px rgba(0, 0, 139, 0.5); /* inner shadow */
+		cursor: pointer;
+		overflow: hidden;
+	}
+	@keyframes palette-enter {
+		0% {
+			transform: translateX(-100%);
+		}
+		100% {
+			transform: translateX(0%);
+	    }
+	}
+
+    @keyframes palette-leave {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+	}
+
+    .palette {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: darkblue; /* Adjust color as needed */
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+	}
+	
+	button:hover .palette {
+		animation-name: palette-enter;
+    } 
+	
+	button:not(:hover) .palette {
+		animation-name: palette-leave;
+    }
+
+	.registeration-1 button:hover{
+		color: white;
+	}
+
+	.text{
+		position: relative;
+		font-size: 12pt;
+		z-index: 1;
+	}
+
+	.Main_Bord{
+		transform: translateY(-50px);
+		width: 84%;
+		background-color: white;
+		font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		padding: 30px;
+		text-align: justify;
+		border-radius:20px;
+		
+	}
+	.Main_Bord h1{
+		font-size: 3rem;
+		color: darkblue;
+
+	}
+
+	.Main_Bord h1:hover{
+		color: blue;
+	}
+
+	#para1{
+		position: relative;
+		font-size: 1.6rem;
+		margin-left: 200px;
+	}
+	.Main_Bord h3{
+		font-size: 1.4rem;
+		margin-bottom: 5px;
+	}
+	#para3{
+		margin-left: 35px;
+		top: 0;
+		margin-top: 0;
+	}
+	.Main_Bord ul li{
+		list-style: square;
+		margin-bottom: 5px;
+	}
+
+	#para5{
+		margin-top: -20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.registeration-2{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 74%;
+		height: 45px;
+		margin-bottom: 40px;
+	}
+	.registeration-2 button{
+		position: relative;
+		width: 35%;
+		height: 80%;
+		border:solid 1px rgb(73, 5, 231);
+		color: darkblue;
+		box-shadow: 0 0 8px 4px rgba(0, 0, 139, 0.5), /* outer shadow */
+            inset 0 0 3px 1px rgba(0, 0, 139, 0.5); /* inner shadow */
+		cursor: pointer;
+		overflow: hidden;
+	}
+	.registeration-2 button:hover{
+		color: white;
+	}
+
+	.scroll_container_outer{
+		/* border: solid 2px rebeccapurple; */
+		overflow: hidden;
+	}
+
+	.scroll_container{
+		display: flex;
+		animation-delay: 5s;
+	}
+
+	.scroll_container img{
+		height: 100px;
+		padding: 20px;
+	}
+
+	.card_assembly{
+		display: grid;
+		column-gap: 80px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.card_alignment{
+		display: flex;
+		justify-content: center;
+	}
+	.secondary_card{
+		position: relative;
+		transform: translate(calc(50% + 40px));
+	}
+
+	.endpara{
+		text-align: center;
+	}
+
+	.email{
+		text-align: center;
+		font-size: 20px;
+	}
+
+	.email_address{
+		font-size: 20px;
+		color: blue;
+	}
+
+	.email_address:hover{
+		color: darkblue;
+		cursor: pointer;
+		text-decoration: underline;
+	}
+</style>
