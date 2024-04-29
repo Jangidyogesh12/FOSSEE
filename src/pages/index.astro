@@ -6,6 +6,7 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Footer from '../components/Footer.astro';
 
+
 // importing Assets
 import India_map from './src/assets/indiamap.png'
 import Hack from './src/assets/right-img.png'
@@ -21,11 +22,13 @@ import Social from '../components/Social.astro';
 import '@fortawesome/fontawesome-free/css/all.css'
 ---
 
-<Layout title="Welcome to Astro.">
+
+<Layout title="National Level Open Hardware-IoT based GeoSpecial Hackathon">
+	<Social/>
 	<main>
-		<Logos height = {50}/>
+		<Logos/>
 		<Navbar/>
-		<Social/>
+		<!-- <Social/> -->
 		<div class="introduction">
 			<div class="Image">
 				<img src={India_map.src} alt="">
@@ -37,8 +40,7 @@ import '@fortawesome/fontawesome-free/css/all.css'
 				</div>
 				<div class="registeration-1"> 
 					<button><div class="text">Register</div> <div class="palette"></div></button>
-				</div>
-				
+				</div>	
 			</div>
 		</div>
 		<div class="Main_Bord">
@@ -134,11 +136,12 @@ import '@fortawesome/fontawesome-free/css/all.css'
 					
 				</div>
 				<p class="endpara">Please write to us in case of any queries regarding the Hackathon at:</p>
-				<p class="email"><i class="fa-regular fa-envelope"></i> Email :<a class="email_address">rajesh[at]cse[dot]iitb[dot]ac[dot]in</a>; <a class="email_address">mohamedkasim[at]iitb[dot]ac[dot]in</a></p>
+				<p class="email" style="font-size: 1rem;"><i class="fa-regular fa-envelope"></i> Email :<a class="email_address" style="font-size: 1rem;">rajesh[at]cse[dot]iitb[dot]ac[dot]in</a>; <a class="email_address" style="font-size: 1rem;">mohamedkasim[at]iitb[dot]ac[dot]in</a></p>
 		    </div>
 		</div>
 		<Footer/>
 	</main>
+	<!-- <Footer/> -->
 </Layout>
 
 <style>
@@ -266,8 +269,9 @@ import '@fortawesome/fontawesome-free/css/all.css'
 		background-color: white;
 		font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 		padding: 30px;
-		text-align: justify;
+		/* text-align: justify; */
 		border-radius:20px;
+		z-index: 3;
 		
 	}
 	.Main_Bord h1{
@@ -280,10 +284,13 @@ import '@fortawesome/fontawesome-free/css/all.css'
 		color: blue;
 	}
 
+	.Main_Bord p{
+		font-size: 0.8rem;
+	}
+
 	#para1{
 		position: relative;
 		font-size: 1.6rem;
-		margin-left: 200px;
 	}
 	.Main_Bord h3{
 		font-size: 1.4rem;
@@ -331,18 +338,18 @@ import '@fortawesome/fontawesome-free/css/all.css'
 	}
 
 	.scroll_container_outer{
-		/* border: solid 2px rebeccapurple; */
-		overflow: hidden;
+		overflow: scroll;
+		overflow-y: hidden;
+		scroll-behavior: smooth;
 	}
 
 	.scroll_container{
 		display: flex;
-		animation-delay: 5s;
 	}
 
 	.scroll_container img{
 		height: 100px;
-		padding: 20px;
+		padding: 10px;
 	}
 
 	.card_assembly{
@@ -378,5 +385,53 @@ import '@fortawesome/fontawesome-free/css/all.css'
 		color: darkblue;
 		cursor: pointer;
 		text-decoration: underline;
+	}
+
+
+	/* Adding Responsiveness */
+	@media screen and (max-width:900px){
+		.introduction{
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	@media screen and (max-width:750px){
+		.card_assembly{
+			display: flex;
+			flex-direction: column;
+		}
+
+		.secondary_card{
+			position: relative;
+			transform: translate(0);
+		}
+
+	}
+	@media screen and (max-width:900px){
+		.scroll_container img{
+			height: 80px;
+			padding:10px;
+		}
+	@media screen and (max-width:800px){
+		.scroll_container img{
+			height: 70px;
+			padding:10px;
+		}
+	}
+	@media screen and (max-width:700px){
+		.scroll_container img{
+			height: 60px;
+			padding:10px;
+		}
+	@media screen and (max-width:600px){
+		.scroll_container img{
+			height: 50px;
+			padding:10px;
+		}
+	@media screen and (max-width:500px){
+		.scroll_container img{
+			height: 40px;
+			padding:10px;
+		}
 	}
 </style>
