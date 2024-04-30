@@ -9,34 +9,33 @@ import Social from '../components/Social.astro';
 import '@fortawesome/fontawesome-free/css/all.css'
 
 // importing Assets
-import India_map from './assets/indiamap.png'
-import Hack from './assets/right-img.png'
-import IIT_Bombay from "./assets/IITBombay-logo.jpg"
-import FOSSEE from "./assets/FOSSEE_logo.png"
-import RuDRA from "./assets/RuDRA.jpeg"
-import Tirupati from "./assets/iit-tirupati.png"
-import navavishkar from "./assets/navavishkaar.png"
-import npimc from "./assets/NMICPS-Final-01.webp"
-import ICFOSS from "./assets/ICFOSS.png"
-import spoken from "./assets/Spoken_tutotrial.jpeg"
+import india_map from '/src/assets/indiamap.png'
+import hack from '/src/assets/right-img.png'
+import iit_bombay from "/src/assets/IITBombay-logo.jpg"
+import fossee from "/src/assets/FOSSEE_logo.png"
+import  rudra from "/src/assets/RuDRA.jpeg"
+import tirupati from "/src/assets/iit-tirupati.png"
+import navavishkar from "/src/assets/navavishkaar.png"
+import npimc from "/src/assets/NMICPS-Final-01.webp"
+import  icfoss from "/src/assets/ICFOSS.png"
+import spoken from "/src/assets/Spoken_tutotrial.jpeg"
 
 ---
 
 
-<Layout title="National Level Open Hardware-IoT based GeoSpecial Hackathon">
+<Layout title="National Level Open Hardware-IoT based GeoSpecial hackathon">
 	<Social/>
 	<main>
 		<Logos/>
 		<Navbar/>
-		<!-- <Social/> -->
 		<div class="introduction">
 			<div class="Image">
-				<img src={India_map.src} alt="">
+				<img src={india_map.src} alt="">
 			</div>
 			<div class="second">
 				<div class="Intro_text">IIT Bombay-FOSSEE-GIS/OSHW, IITTNiF & ICFOSS presents</div>
-				<div class="Hackathone">
-					<img src={Hack.src} alt="">
+				<div class="hackathone">
+					<img src={hack.src} alt="">
 				</div>
 				<div class="registeration-1"> 
 					<button><div class="text">Register</div> <div class="palette"></div></button>
@@ -44,11 +43,11 @@ import spoken from "./assets/Spoken_tutotrial.jpeg"
 			</div>
 		</div>
 		<div class="Main_Bord">
-			<h1>Introducing the Hackathon: Unlocking Innovation for a Better World</h1>
+			<h1>Introducing the hackathon: Unlocking Innovation for a Better World</h1>
 
-			<p id="para1">Welcome to the Open Source Hardware IoT GIS Hackathon!</p>
+			<p id="para1">Welcome to the Open Source Hardware IoT GIS hackathon!</p>
 
-			<p id="para2">Welcome to the National Level Open Hardware-IoT Geospatial Hackathon, a stage where innovation knows no boundaries. This premier event brings together visionaries, tech enthusiasts, and problem solvers from across the nation to harness the power of open hardware, the Internet of Things (IoT), and geospatial technology. Get ready to explore uncharted possibilities, collaborate on real-world challenges, and make a significant impact on our world.
+			<p id="para2">Welcome to the National Level Open Hardware-IoT Geospatial hackathon, a stage where innovation knows no boundaries. This premier event brings together visionaries, tech enthusiasts, and problem solvers from across the nation to harness the power of open hardware, the Internet of Things (IoT), and geospatial technology. Get ready to explore uncharted possibilities, collaborate on real-world challenges, and make a significant impact on our world.
 			</p>
 
 			<h3> Significance:</h3>
@@ -65,7 +64,7 @@ import spoken from "./assets/Spoken_tutotrial.jpeg"
 				<li>Empower Future Leaders: Whether you're a student, a professional, or an enthusiast, this hackathon is a launchpad for your ideas. It's a chance to develop your skills, showcase your talents, and make your mark on the world.</li>
 			</ul>
 
-			<p id="para4">Join us on this extraordinary journey, where innovation knows no bounds. Together, let's turn ideas into actions and make a lasting impact on society and the environment. The Open Source Hardware IoT GIS Hackathon is your stage to shine, and the world is waiting to witness your brilliance.</p>
+			<p id="para4">Join us on this extraordinary journey, where innovation knows no bounds. Together, let's turn ideas into actions and make a lasting impact on society and the environment. The Open Source Hardware IoT GIS hackathon is your stage to shine, and the world is waiting to witness your brilliance.</p>
 
 			<h1>Purpose</h1>
 
@@ -76,7 +75,7 @@ import spoken from "./assets/Spoken_tutotrial.jpeg"
 
 			<h1>Registration</h1>
 			<div id="para5">
-				<p>Please click on the following button to register yourself for the Hackathon</p>
+				<p>Please click on the following button to register yourself for the hackathon</p>
 				<div class="registeration-2"> 
 					<button><div class="text">Register</div> <div class="palette"></div></button>
 				</div>
@@ -85,18 +84,18 @@ import spoken from "./assets/Spoken_tutotrial.jpeg"
 			<h1>Partners and Organisers</h1>
 			<div class="scroll_container_outer">
 				<div class="scroll_container">
-					<img src={IIT_Bombay.src} alt="">
-					<img src={FOSSEE.src} alt="">
+					<img src={iit_bombay.src} alt="">
+					<img src={fossee.src} alt="">
 					<img src={spoken.src} alt="">
-					<img src={ICFOSS.src} alt="">
-					<img src={RuDRA.src} alt="">
-					<img src={Tirupati.src} alt="">
+					<img src={icfoss.src} alt="">
+					<img src={rudra.src} alt="">
+					<img src={tirupati.src} alt="">
 					<img src={navavishkar.src} alt="">
 					<img src={npimc.src} alt="">
 			    </div>
 			</div>
 
-			<p id="para6"><strong>Main Organizer: IIT Bombay FOSSEE GIS & OSHW project (NMEICT, Ministry of Education, Government of India) </strong>  The IIT Bombay FOSSEE GIS & OSHW project teams are the main organizers of this National Level Geospatial IoT Hackathon 2024 (Edition 01). FOSSEE promotes the usage of Free/Libre Open Source Software in academia and industry and is funded through the National Mission on Education through ICT, Ministry of Education, Government of India. 
+			<p id="para6"><strong>Main Organizer: IIT Bombay FOSSEE GIS & OSHW project (NMEICT, Ministry of Education, Government of India) </strong>  The IIT Bombay FOSSEE GIS & OSHW project teams are the main organizers of this National Level Geospatial IoT hackathon 2024 (Edition 01). FOSSEE promotes the usage of Free/Libre Open Source Software in academia and industry and is funded through the National Mission on Education through ICT, Ministry of Education, Government of India. 
 			<br><br> 
 			<strong>Technical Partner:</strong>  The Rural Data Research and Analysis (RuDRA) Lab, IIT Bombay is India's first HPC-powered data center dedicated to Rural Development.
 			<br><br>
@@ -130,12 +129,12 @@ import spoken from "./assets/Spoken_tutotrial.jpeg"
 
 						<div class="secondary_card">
 						    <!-- 9th Card -->
-				            <Card name="Mr. Mohamed Kasim Khan" position="National Coordinator, FOSSEE-GIS & GIS-IoT Hackathon"     secondary_info="National Mission on Education through ICT, Ministry of Education, Government of India"     institute="Indian Institute of Technology Bombay"/>
+				            <Card name="Mr. Mohamed Kasim Khan" position="National Coordinator, FOSSEE-GIS & GIS-IoT hackathon"     secondary_info="National Mission on Education through ICT, Ministry of Education, Government of India"     institute="Indian Institute of Technology Bombay"/>
 						</div>
 				    </div>
 					
 				</div>
-				<p class="endpara">Please write to us in case of any queries regarding the Hackathon at:</p>
+				<p class="endpara">Please write to us in case of any queries regarding the hackathon at:</p>
 				<p class="email" style="font-size: 1rem;"><i class="fa-regular fa-envelope"></i> Email :<a class="email_address" style="font-size: 1rem;">rajesh[at]cse[dot]iitb[dot]ac[dot]in</a>; <a class="email_address" style="font-size: 1rem;">mohamedkasim[at]iitb[dot]ac[dot]in</a></p>
 		    </div>
 		</div>
@@ -180,12 +179,12 @@ import spoken from "./assets/Spoken_tutotrial.jpeg"
 		margin-top: 30px;
 	}
 
-	.Hackathone{
+	.hackathone{
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-	.Hackathone img{
+	.hackathone img{
 		width: 70%;
 	}
 	.second{
